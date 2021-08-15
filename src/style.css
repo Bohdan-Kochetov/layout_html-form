@@ -1,1 +1,10 @@
 /* styles go here */
+.section-1{
+  border: 2px solid black;
+  margin: 20px 10px;
+  padding: 20px;
+}
+
+.form{
+  padding: 5px;
+}
