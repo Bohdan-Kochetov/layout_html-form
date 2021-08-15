@@ -15,44 +15,52 @@
       <section class="section-1">
         Personal information
         <div class="form">
-          Surname:
-          <input type="text" name="Surname">
+          <label for="Surname_active">Surname:</label>
+          <input
+          type="text" name="Surname"
+          id="Surname_active">
         </div>
         <div class="form">
-          Name:
-          <input type="text" name="Name">
+          <label for="Name_active">Name:</label>
+          <input
+          type="text" name="Name"
+          id="Name_active">
         </div>
-        <div class="form">
-          How old are You?
+        <div class="form" id="text_active">
+          <label for="year_active">How old are You?</label>
           <input
             type="number" name="How old are You?"
-            value="12" max="100">
+            value="12" max="100"
+            id="year_active">
         </div>
         <div class="form">
-          Full date of birth
+          <label for="date_active">Full date of birth</label>
           <input
             type="text" name="Full date of birth"
-            placeholder="mm/ dd/ yyyy">
+            placeholder="mm/ dd/ yyyy" id="date_active">
         </div>
         <div class="form">
-          I accept the term of the agreement
-          <input type="checkbox" name="I accept the term of the agreement">
+          <label for="agree_active">I accept the term of the agreement</label>
+          <input
+          type="checkbox" name="I accept the term of the agreement"
+          id="agree_active">
         </div>
       </section>
 
       <section class="section-1">
         Registration
         <div class="form">
-          E-mail:
+          <label for="E-mail_active">E-mail:</label>
           <input
           type="email" name="E-mail:"
-          placeholder="email@example.com">
+          placeholder="email@example.com" id="E-mail_active">
         </div>
         <div class="form">
-          Password
+          <label for="Password_active">Password</label>
           <input
             type="password" name="Password:"
-            minlength="8" maxlength="32">
+            minlength="8" maxlength="32"
+            id="Password_active">
         </div>
       </section>
 
@@ -72,13 +80,15 @@
         </div>
 
         <div class="form">
-          What time do you go to bed?
-          <input type="time" name="time">
+          <label for="time-bed_active">What time do you go to bed?</label>
+          <input
+          type="time" name="time"
+          id="time-bed_active">
         </div>
 
         <div class="form">
-          What is your favorite brand of cars?
-          <select name="car" id="">
+          <label for="change-car_active">What is your favorite brand of cars?</label>
+          <select name="car" id="change-car_active">
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
