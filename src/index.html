@@ -18,22 +18,22 @@
           Surname:
           <input type="text" name="Surname">
         </div>
-      
         <div class="form">
           Name:
           <input type="text" name="Name">
         </div>
-  
         <div class="form">
           How old are You?
-          <input type="number" name="How old are You?" value="12" max="100">
+          <input
+            type="number" name="How old are You?"
+            value="12" max="100">
         </div>
-  
         <div class="form">
           Full date of birth
-          <input type="text" name="Full date of birth" placeholder="mm/ dd/ yyyy">
+          <input
+            type="text" name="Full date of birth"
+            placeholder="mm/ dd/ yyyy">
         </div>
-  
         <div class="form">
           I accept the term of the agreement
           <input type="checkbox" name="I accept the term of the agreement">
@@ -44,18 +44,22 @@
         Registration
         <div class="form">
           E-mail:
-          <input type="email" name="E-mail:" placeholder="email@example.com">
+          <input
+          type="email" name="E-mail:"
+          placeholder="email@example.com">
         </div>
         <div class="form">
           Password
-          <input type="password" name="Password:" minlength="8" maxlength="32">
+          <input
+            type="password" name="Password:"
+            minlength="8" maxlength="32">
         </div>
       </section>
 
       <section class="section-1">
         An interesting fact about you!
         <div class="form">
-          Do you love cats? 
+          Do you love cats?
           <input type="radio" name="cats">
           Yes
           <input type="radio" name="cats">
@@ -74,7 +78,11 @@
 
         <div class="form">
           What is your favorite brand of cars?
-          <input type="select" name="car">
+          <select name="car" id="">
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
         </div>
 
         <div class="form">
@@ -85,14 +93,17 @@
 
       <section class="section-1">
         Additional info:
-        <br>
-        Comments
-        <textarea name=""></textarea>
+        <div class="form">
+          Comments
+          <textarea name="text"></textarea>
+        </div>
+        <div class="form">
+          Would you recommend us?
+        </div>
       </section>
 
       <button>Submit</button>
     </form>
-    
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
