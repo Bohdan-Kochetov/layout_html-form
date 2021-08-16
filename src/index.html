@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post"
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="GET"
     onsubmit="onSubmit()">
       <fieldset class="section-1">
         <legend class="h1">Personal information</legend>
@@ -38,8 +38,8 @@
         <div class="form">
           <label for="date_active">Full date of birth:</label>
           <input
-            type="text" name="Full date of birth"
-            placeholder="mm/ dd/ yyyy" id="date_active"
+            type="date" name="Full date of birth"
+            placeholder="дд.мм.гггг" id="date_active"
             autocomplete="off">
         </div>
         <div class="form">
@@ -93,12 +93,14 @@
           <label for="time-bed_active">What time do you go to bed?</label>
           <input
           type="time" name="time"
-          id="time-bed_active" autocomplete="off">
+          id="time-bed_active" autocomplete="off"
+          step="0.01">
         </div>
 
         <div class="form">
-          <label for="change-car_active">What is your favorite brand of cars?</label>
-          <select name="car" id="change-car_active">
+          <label for="change-car_active">What are your favorite brand of cars?</label>
+          <select name="car" id="change-car_active"
+          size="4">
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
@@ -124,8 +126,8 @@
         <div class="form">
           <label for="recommend_active">Would you recommend us?</label>
           <select name="recommend-us" id="recommend_active">
-            <option value="Yes" >Yes</option>
-            <option value="No">No</option>
+            <option value="Yes" >yes</option>
+            <option value="No">no</option>
           </select>
         </div>
       </fieldset>

@@ -1,9 +1,10 @@
 /* styles go here */
 
 .form {
-  padding: 10px 0;
+  margin-bottom: 10px;
 }
 
 .section-1 {
-  margin: 20px 0;
+  margin-bottom: 20px;
+  padding-bottom: 0;
 }
