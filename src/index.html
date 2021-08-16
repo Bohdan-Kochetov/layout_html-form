@@ -18,26 +18,28 @@
           <label for="Surname_active">Surname:</label>
           <input
           type="text" name="Surname"
-          id="Surname_active">
+          id="Surname_active" autocomplete="off">
         </div>
         <div class="form">
           <label for="Name_active">Name:</label>
           <input
           type="text" name="Name"
-          id="Name_active">
+          id="Name_active" autocomplete="off">
         </div>
         <div class="form" id="text_active">
           <label for="year_active">How old are You?</label>
           <input
             type="number" name="How old are You?"
             value="12" max="100"
-            id="year_active">
+            id="year_active" min="0"
+            autocomplete="off">
         </div>
         <div class="form">
-          <label for="date_active">Full date of birth</label>
+          <label for="date_active">Full date of birthday</label>
           <input
             type="text" name="Full date of birth"
-            placeholder="mm/ dd/ yyyy" id="date_active">
+            placeholder="mm/ dd/ yyyy" id="date_active"
+            autocomplete="off">
         </div>
         <div class="form">
           <label for="agree_active">I accept the term of the agreement</label>
@@ -53,14 +55,17 @@
           <label for="E-mail_active">E-mail:</label>
           <input
           type="email" name="E-mail:"
-          placeholder="email@example.com" id="E-mail_active">
+          placeholder="email@example.com" id="E-mail_active"
+          required multiple
+          autocomplete="off">
         </div>
         <div class="form">
           <label for="Password_active">Password</label>
           <input
             type="password" name="Password:"
             minlength="8" maxlength="32"
-            id="Password_active">
+            id="Password_active" required
+            autocomplete="off">
         </div>
       </section>
 
@@ -87,7 +92,7 @@
           <label for="time-bed_active">What time do you go to bed?</label>
           <input
           type="time" name="time"
-          id="time-bed_active">
+          id="time-bed_active" autocomplete="off">
         </div>
 
         <div class="form">
@@ -111,7 +116,9 @@
         Additional info:
         <div class="form">
           <label for="Comments_active">Comments</label>
-          <textarea name="text" id="Comments_active"></textarea>
+          <textarea name="text" id="Comments_active"
+          autocomplete="off">
+          </textarea>
         </div>
         <div class="form">
           <label for="recommend_active">Would you recommend us?</label>
