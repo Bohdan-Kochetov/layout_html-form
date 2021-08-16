@@ -13,8 +13,8 @@
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post"
     onsubmit="onSubmit()">
-      <section class="section-1">
-        Personal information
+      <fieldset class="section-1">
+        <legend class="h1">Personal information</legend>
         <div class="form">
           <label for="Surname_active">Surname:</label>
           <input
@@ -36,7 +36,7 @@
             autocomplete="off">
         </div>
         <div class="form">
-          <label for="date_active">Full date of birthday</label>
+          <label for="date_active">Full date of birth:</label>
           <input
             type="text" name="Full date of birth"
             placeholder="mm/ dd/ yyyy" id="date_active"
@@ -48,10 +48,10 @@
           type="checkbox" name="I accept the term of the agreement"
           id="agree_active">
         </div>
-      </section>
+      </fieldset>
 
-      <section class="section-1">
-        Registration
+      <fieldset class="section-1">
+        <legend class="h1">Registration</legend>
         <div class="form">
           <label for="E-mail_active">E-mail:</label>
           <input
@@ -61,17 +61,17 @@
           autocomplete="off">
         </div>
         <div class="form">
-          <label for="Password_active">Password</label>
+          <label for="Password_active">Password:</label>
           <input
             type="password" name="Password:"
             minlength="8" maxlength="32"
             id="Password_active" required
             autocomplete="off">
         </div>
-      </section>
+      </fieldset>
 
-      <section class="section-1">
-        An interesting fact about you!
+      <fieldset class="section-1">
+        <legend class="h1">An interesting fact about you!</legend>
         <div class="form">
           <label for="like-cats_active">Do you love cats?</label>
           <input
@@ -111,12 +111,12 @@
           type="range" name="rate"
           id="rate_active">
         </div>
-      </section>
+      </fieldset>
 
-      <section class="section-1">
-        Additional info:
+      <fieldset class="section-1">
+        <legend class="h1">Additional info:</legend>
         <div class="form">
-          <label for="Comments_active">Comments</label>
+          <label for="Comments_active">Comments:</label>
           <textarea name="text" id="Comments_active"
           autocomplete="off">
           </textarea>
@@ -128,7 +128,7 @@
             <option value="No">No</option>
           </select>
         </div>
-      </section>
+      </fieldset>
 
       <button>Submit</button>
     </form>

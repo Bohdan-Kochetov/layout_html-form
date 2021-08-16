@@ -1,14 +1,9 @@
 /* styles go here */
-.body {
-  margin: 0;
+
+.form {
+  padding: 10px 0;
 }
 
 .section-1 {
-  border: 2px solid black;
-  margin: 20px;
-  padding: 20px;
-}
-
-.form {
-  margin: 10px;
+  margin: 20px 0;
 }
