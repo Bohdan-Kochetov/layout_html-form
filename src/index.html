@@ -67,16 +67,20 @@
       <section class="section-1">
         An interesting fact about you!
         <div class="form">
-          Do you love cats?
-          <input type="radio" name="cats">
+          <label for="like-cats_active">Do you love cats?</label>
+          <input
+          type="radio" name="cats"
+          id="like-cats_active">
           Yes
           <input type="radio" name="cats">
           No
         </div>
 
         <div class="form">
-          What is your favorite color?
-          <input type="color" name="color">
+          <label for="color_active">What is your favorite color?</label>
+          <input
+          type="color" name="color"
+          id="color_active">
         </div>
 
         <div class="form">
@@ -96,21 +100,23 @@
         </div>
 
         <div class="form">
-          How do you rate our work?
-          <input type="range" name="">
+          <label for="rate_active">How do you rate our work?</label>
+          <input
+          type="range" name="rate"
+          id="rate_active">
         </div>
       </section>
 
       <section class="section-1">
         Additional info:
         <div class="form">
-          Comments
-          <textarea name="text"></textarea>
+          <label for="Comments_active">Comments</label>
+          <textarea name="text" id="Comments_active"></textarea>
         </div>
         <div class="form">
-          Would you recommend us?
-          <select >
-            <option value="Yes">Yes</option>
+          <label for="recommend_active">Would you recommend us?</label>
+          <select name="recommend-us" id="recommend_active">
+            <option value="Yes" >Yes</option>
             <option value="No">No</option>
           </select>
         </div>
